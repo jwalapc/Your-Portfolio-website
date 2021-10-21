@@ -34,4 +34,5 @@ NOTE: Be sure to merge the latest from "upstream" before making a pull request!
 6. **SAVE THE CHANGES**
 7. **SEE THE CHANGES IN THE LOCAL SERVER**
 8. **AFTER THAT PERFORM THE STEPS FOR CONTRIBUTING**
+9. **PLEASE MAKE YOUR OWN FOLDER**
 
