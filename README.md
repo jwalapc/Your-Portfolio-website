@@ -1,6 +1,6 @@
 # Your-Portfolio-website
-Contributing to MEDICO Open Source Projects
-=========================================
+Contributing to Your-Portfolio-website  Open Source Projects
+============================================================
 
 
 Issues
