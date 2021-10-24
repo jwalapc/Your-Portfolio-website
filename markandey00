@@ -18,7 +18,7 @@ body{
 }
 .box-img{
   border-radius: 50%;
-  width: 200px;
+  width: 250px;
   height: 200px;
 }
 .box h1{
@@ -40,13 +40,13 @@ ul{
 }
 .box li{
   display: inline-block;
-  margin: 6px;
+  margin: 9px;
   list-style: none;
 }
 .box li a{
   color: white;
   text-decoration: none;
-  font-size: 60px;
+  font-size: 68px;
   transition: all ease-in-out 250ms;
 }
 .box li a:hover{
@@ -68,7 +68,7 @@ ul{
   <body>
 <div class="box">
   <img src="marky.jpg" alt="" class="box-img">
-  <h1>Markandey Sharma</h1>
+  <h1>utkarsh sharma</h1>
 <h5>
 Web Devloper - Web Designer</h5>
 <p>
