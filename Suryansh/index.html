@@ -1,0 +1,118 @@
+<!documentTYPE html>
+<style>
+body{
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+ background: url('bg.jpg');
+}
+.box{
+  width: 450px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+  margin-top: 5%;
+  color: white;
+  font-family: 'Century Gothic',sans-serif;
+}
+.box-img{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.box h1{
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 100;
+}
+.box h5{
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+.box p{
+  text-align: justify;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+.box li{
+  display: inline-block;
+  margin: 6px;
+  list-style: none;
+}
+.box li a{
+  color: white;
+  text-decoration: none;
+  font-size: 60px;
+  transition: all ease-in-out 250ms;
+}
+.box li a:hover{
+  color: #b9b9b9;
+}
+  p {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 0px;
+  }
+</style>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Personal WebSite</title>
+  </head>
+  <body>
+<div class="box">
+  <img src="suryansh1.jpg" alt="" class="box-img">
+  <h1>Suryansh Soni</h1>
+<h5>
+Web Devloper, Android Devloper</h5>
+<p>A web developer is a programmer who specializes in, or is specifically engaged in, the development of World Wide Web applications, or applications that are run over HTTP from a web server to a web browser.</p>
+<p>An android developer is a programmer who specializes in, or is specifically engaged in, the development of mobile applications.</p>
+<ul>
+<li><a href="https://twitter.com/surisoni10"><img src="twitter.png" width="50" height="50"></i></a></li>
+<li><a href="https://www.instagram.com/surisoni10/"><img src="instagram.png" width="50" height="50"></i></a></li>
+<li><a href="https://www.facebook.com/suryansh.soni.16568/"><img src="facebook.png" width="50" height="50"></i></a></li>
+<li><a href="https://github.com/suryanshsoni120"><img src="github.png" width="50" height="50"></i></a></li>
+<li><a href="https://www.linkedin.com/in/suryansh-soni-8b9a92185/"><img src="linkedin.png" width="50" height="50"></i></a></li>
+</ul>
+</div>
+<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Dec 31, 2021 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "More to come";
+  }
+}, 1000);
+</script>
+</body>
+</html>
+
