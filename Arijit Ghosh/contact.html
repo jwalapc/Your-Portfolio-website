@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar sidebarGo">
+            <!-- <h1>Arijit Ghosh</h1> -->
+            <nav>
+                <ul>
+                    <li><a href="/" class="navelem ">Home</a></li>
+                    <li><a href="/about.html" class="navelem ">About Myself</a></li>
+                    <li><a href="/skill.html" class="navelem ">Skills</a></li>
+                    <li><a href="/project.html" class="navelem ">Projects</a></li>
+                    <li><a href="/blog.html" class="navelem ">Blogs</a></li>
+                    <li><a href="/certificate.html" class="navelem ">Certificates</a></li>
+                    <li><a href="/contact.html" class="navelem active">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menu" >
+            <img src="img/ham.png" alt="" class="ham" >
+            <img src="img/cross.png" alt="" class="cross">
+            </div>
+        <div class="contact">
+            <div class="contacthead">
+                Contact Me For Work/General Query
+            </div>
+            <div class="form">
+                <form id="sheetdb-form" method="post" action="https://sheetdb.io/api/v1/vqo6jhj1d06iy">
+                    <input type="hidden" name="timestamp" id="timestamp">
+                    <div class="nameform">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your Name">
+                    </div>
+                    <div class="emailform">
+                        <label for="email">Email adress</label>
+                        <input type="email" id="email" name="email" placeholder="name@example.com">
+                    </div>
+                    <div class="categoryform">
+                        <label for="category">Category</label>
+                        <select name="category">
+                            <option value="none">None</option>
+                            <option name="programming" id="programming" value="programming">Programming</option>
+                            <option name="webdev" id="webdev" value="webdev">Web Development</option>
+                            <option name="photoshop" id="photoshop" value="photoshop">Photoshop</option>
+                        </select>
+                    </div>
+                    <div class="descform">
+                        <label for="desc">Description</label>
+                        <textarea name="desc" id="desc" cols="20" rows="5"
+                            placeholder="Elaborate your concern"></textarea>
+                    </div>
+                    <div class="btnform">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="social">
+                <!-- <em>Connect with me</em> -->
+                <div class="icons">
+                    <ul>
+                        <li style="--clr:#3b5998;"><a href="https://www.facebook.com/profile.php?id=100043922747313"
+                                target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li style="--clr:#0077b5;"><a href="https://www.linkedin.com/in/arijit-ghosh-902a4b220/"
+                                target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                                <li style="--clr:#ff3232;"><a
+                                        href="https://www.youtube.com/channel/UCDmB9yl8aKCT0fP5Abb7wnw/videos"
+                                        target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li style="--clr:#c32aa3;"><a href="https://www.instagram.com/arijit_089/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a></li>
+                        <li style="--clr:#55acee;"><a href="https://twitter.com/rancho2002oct" target="_blank"><i
+                                    class="fa-brands fa-twitter"></i></a></li>
+                        <li style="--clr:#00405d;"><a href="https://github.com/Rancho2002" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a></li>
+                        <li style="--clr: #34a853" class="gmail"><a href="mailto:subhasghosh196@gmail.com" target="_blank"><img src="img/gmail.png" alt="gmail"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- background-image:linear-gradient(#4285f4,#ea4335,#fbbc05,#34a853 ) ; -->
+
+    </div>
+    <footer>
+        <div >
+            <p class="footer">Copyright &copy; 2022</p>
+         
+        </div>
+    </footer>
+    
+    <script>
+        // console.log("nice");
+    var form = document.getElementById('sheetdb-form');
+        form.addEventListener("submit", e => {
+            e.preventDefault();
+            fetch(form.action, {
+                method: "POST",
+                body: new FormData(document.getElementById("sheetdb-form")),
+            }).then(
+                response => response.json()
+            ).then((html) => {
+                alert("Message sent successfully");
+                window.location.href="/contact.html";
+            });
+        });</script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

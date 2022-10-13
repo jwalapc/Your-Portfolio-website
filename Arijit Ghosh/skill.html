@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar sidebarGo">
+            <!-- <h1>Arijit Ghosh</h1> -->
+            <nav>
+                <ul>
+                    <li><a href="/" class="navelem">Home</a></li>
+                    <li><a href="/about.html" class="navelem ">About Myself</a></li>
+                    <li><a href="/skill.html" class="navelem active">Skills</a></li>
+                    <li><a href="/project.html" class="navelem ">Projects</a></li>
+                    <li><a href="/blog.html" class="navelem ">Blogs</a></li>
+                    <li><a href="/certificate.html" class="navelem ">Certificates</a></li>
+                    <li><a href="/contact.html" class="navelem ">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menu" >
+            <img src="img/ham.png" alt="" class="ham">
+            <img src="img/cross.png" alt="" class="cross">
+            </div>
+        <div class="skill">
+            <h2>My skills</h2>
+            <!-- Just copy the div and add your Skills -->
+            <div class="progressbar-container">
+
+                <!-- <div>
+                <p class="skill-title">C</p>
+                <p class="skill-quantity">89%</p>
+                <div class="skill-box">
+                    <div class="volume"></div>
+                </div>
+            </div> -->
+                <div class="skill-elem">
+                    <p class="skill-title">C</p>
+                    <p class="skill-quantity">95%</p>
+                    <div class="skill-box">
+                        <div class="volume"></div>
+                    </div>
+                </div>
+                <div class="skill-elem">
+                    <p class="skill-title">Html</p>
+                    <p class="skill-quantity">100%</p>
+                    <div class="skill-box">
+                        <div class="volume"></div>
+                    </div>
+                </div>
+
+                <div class="skill-elem">
+                    <p class="skill-title">Css</p>
+                    <p class="skill-quantity">99%</p>
+                    <div class="skill-box">
+                        <div class="volume"></div>
+                    </div>
+                </div>
+
+                <div class="skill-elem">
+                    <p class="skill-title">JavaScript</p>
+                    <p class="skill-quantity">50%</p>
+                    <div class="skill-box">
+                        <div class="volume"></div>
+                    </div>
+                </div>
+                <div class="skill-elem">
+                    <p class="skill-title">Python</p>
+                    <p class="skill-quantity">60%</p>
+                    <div class="skill-box">
+                        <div class="volume"></div>
+                    </div>
+                </div>
+
+                <div class="skill-elem">
+                    <p class="skill-title">php</p>
+                    <p class="skill-quantity">89%</p>
+                    <div class="skill-box">
+                        <div class="volume"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <footer>
+        <div >
+            <p class="footer">Copyright &copy; 2022</p>
+         
+        </div>
+    </footer>
+    <script>
+        //
+// Awsome ProgressBar
+//
+const progressbarContainer = document.querySelector('.progressbar-container');
+const totalWidth = parseInt(getComputedStyle(progressbarContainer).width);
+const volume = document.querySelectorAll('.volume');
+// resize the volume of boxes with the values
+volume.forEach(element => {
+    const vol = parseInt(element.parentElement.parentElement.children[1].innerText);
+    element.style.width = `${vol}%`;
+});
+// Change the Pointer of Volume
+const skillQuantity = document.querySelectorAll('.skill-quantity');
+skillQuantity.forEach(element => {
+    let val = parseInt(element.innerText);
+    // becuase the pointer overflow of box in 100%
+    if (val == 100) {
+        val -= .4;
+    }
+    // Width of valueText / 2 => put on the pointerLine
+    const textWidth = parseInt(getComputedStyle(element).width) / 2;
+    //calcute the place of the pointer
+    element.style.right = `${totalWidth-textWidth-(val*totalWidth/100)}px`
+});
+
+
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
