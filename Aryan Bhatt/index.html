@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="./images/letter-a.png" />
+
+    <!-- Put your site title here -->
+    <title>Aryan Bhatt portfolio</title>
+
+    <meta name="description" content="Add small description of yourslef." />
+    <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+    <meta
+      name="keywords"
+      content="Put your name, skills and some coding keywords"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
+    <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <!-- ***** Header ***** -->
+
+    <header class="header" role="banner" id="top">
+      <div class="row">
+        <nav class="nav" role="navigation">
+          <ul class="nav__items">
+            <li class="nav__item">
+              <a href="#work" class="nav__link">My projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="#clients" class="nav__link">Tech Stacks</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About Me</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact Me</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__text-box row">
+        <div class="header__text">
+          <h1 class="heading-primary">
+            <!-- Replace the following name with your name -->
+            <span class="my-name">Aryan Bhatt</span>
+          </h1>
+          <!-- Put a small paragraph about yourself -->
+          <div class="description-aryan">
+            <br>
+            
+            An Enthusiastic React developer and Unity Game developer
+            <br>
+            <br>
+            
+              Studying in International Institute of Information Technology
+              Bangalore
+            <br>
+            <br>
+          </div>
+
+          <a href="#contact" class="btn btn--pink">Get in touch</a>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+      <!-- ***** Work ***** -->
+
+      <section class="work" id="work">
+        <div class="row">
+          <h2>My Projects</h2>
+          <div class="work__boxes">
+            <!-- Each div with the work__box class is a project. -->
+
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Plant vs Zombies Pygame</h3>
+                <p>A game build in the python library of pygame which simulates the famous plants vs zombies game</p>
+                <ul class="work__list">
+                  <li>Python 3.10</li>
+                  <li>PyGame</li>
+
+                <!-- <div class="work__links">
+                  <a
+                    href="https://nisar.surge.sh"
+                    target="_blank"
+                    class="link__text"
+                  >
+                    Visit Site <span>&rarr;</span>
+                  </a>
+                  <a
+                    href="https://github.com/nisarhassan12/portfolio"
+                    title="View Source Code"
+                    target="_blank"
+                  >
+                    <img
+                      src="./images/github.svg"
+                      class="work__code"
+                      alt="GitHub"
+                    />
+                  </a>
+                </div> -->
+              </div>
+              <div class="work__image-box">
+                <img
+                  src="./images/plants_zomb.jpeg"
+                  class="work__image"
+                  alt="Project 1"
+                />
+              </div>
+            </div>
+
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Covid Dodger</h3>
+                <p>
+                  A 2D endless runner game made in Unity game engine. There is a vaccine shaped plave which has to dodge the covid shaped monsters.
+                </p>
+                <ul class="work__list">
+                  <li>C#</li>
+                  <li>Unity Game Engine</li>
+                </ul>
+
+                <!-- <div class="work__links">
+                  <a href="#" class="link__text">
+                    Visit Site <span>&rarr;</span>
+                  </a>
+                  <a href="#">
+                    <img
+                      src="./images/covid.png"
+                      class="work__code"
+                      title="View Source Code"
+                      alt="GitHub"
+                    />
+                  </a>
+                </div> -->
+              </div>
+              <div class="work__image-box">
+                <img
+                  src="./images/covid.png"
+                  class="work__image"
+                  alt="Project 1"
+                />
+              </div>
+            </div>
+
+            <div class="work__box">
+              <div class="work__text">
+                <h3>College Fest Website</h3>
+                <p>
+                  Made the landing website for the cultural college fest of IIITB, Infin8.
+                </p>
+                <ul class="work__list">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Javascript</li>
+                  <li>Bootstrap</li>
+                </ul>
+
+                <!-- <div class="work__links">
+                  <a href="#" class="link__text">
+                    Visit Site <span>&rarr;</span>
+                  </a>
+                  <a href="#">
+                    <img
+                      src="./images/github.svg"
+                      class="work__code"
+                      title="View Source Code"
+                      alt="GitHub"
+                    />
+                  </a>
+                </div> -->
+              </div>
+              <div class="work__image-box">
+                <img
+                  src="./images/infin8.png"
+                  class="work__image"
+                  alt="Project 3"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ***** Clients ***** -->
+
+      <section class="client" id="clients">
+        <div class="row">
+          <h2>Tech Stacks</h2>
+          <div class="client__logos">
+            <!-- Add logos of the clients or companies you'have worked with. -->
+            <img
+              src="./images/react.png"
+              class="client__logo"
+              alt="Company 2"
+            />
+            <img
+              src="./images/nodejs-logo.png"
+              class="client__logo"
+              alt="Company 3"
+            />
+            <img
+              src="./images/unity.jpg"
+              class="client__logo"
+              alt="Company 1"
+            />
+            <img
+              src="./images/mongo.jpg"
+              class="client__logo"
+              alt="Company 1"
+            />
+            <img
+              src="./images/flutter.png"
+              class="client__logo"
+              alt="Company 3"
+            />
+            <img
+              src="./images/js.png"
+              class="client__logo"
+              alt="Company 1"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ***** About ***** -->
+
+      <section class="about" id="about">
+        <div class="row">
+          <h2>About Me</h2>
+          <div class="about__content">
+            <div class="about__text">
+              <!-- Replace the below paragraph with info about yourself -->
+              <p>My name is Aryan Bhatt. I am currently a computer science student in IIIT Bangalore.
+                I love building websites and games. I develop apps and websites in react and nodejs. Also have experience in game development in unity.
+              </p>
+              <!-- Provide a link to your resume -->
+              <!-- <a href="#" class="btn">My Resume</a> -->
+            </div>
+
+            <div class="about__photo-container">
+              <!-- Add a nice photo of yourself -->
+              <img
+                class="about__photo"
+                src="./images/my-aryan.jpeg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ***** Contact ***** -->
+
+    <section class="contact" id="contact">
+      <div class="row">
+        <h2>Get in Touch</h2>
+        <div class="contact__info">
+          <p>
+           Are you looking for a website designer who has a good sense of UI and UX design? 
+           Are you looking for a app developer for your company? Are you looking for a game developer which has a good knowledge of OOP programming? You have come to the right place. Kindly contact me via my email below.</p>
+          <!-- Replace the email with yours -->
+          <a href="mailto:you@example.com" class="btn">aryan.bhatt@iiitb.ac.in</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Footer ***** -->
+
+    <footer role="contentinfo" class="footer">
+      <div class="row">
+        <!-- Update the links to point to your accounts -->
+        <ul class="footer__social-links">
+          <li class="footer__social-link-item">
+            <!-- <a
+              href="https://twitter.com/nisarhassan12/"
+              title="Link to Twitter Profile"
+            >
+              <img
+                src="./images/twitter.svg"
+                class="footer__social-image"
+                alt="Twitter"
+              />
+            </a> -->
+          </li>
+          <li class="footer__social-link-item">
+            <a
+              href="https://github.com/Aryan-Bhatt-pro"
+              title="Link to Github Profile"
+            >
+              <img
+                src="./images/github.svg"
+                class="footer__social-image"
+                alt="Github"
+              />
+            </a>
+          </li>
+          <!-- <li class="footer__social-link-item">
+            <a
+              href="https://codepen.io/nisar_hassan"
+              title="Link to Codepen Profile"
+            >
+              <img
+                src="./images/codepen.svg"
+                class="footer__social-image"
+                alt="Codepen"
+              />
+            </a>
+          </li> -->
+          <li class="footer__social-link-item">
+            <a href="https://www.linkedin.com/in/aryan-bhatt-ba4a04200/">
+              <img
+                src="./images/linkedin.svg"
+                title="Link to Linkedin Profile"
+                class="footer__social-image"
+                alt="Linkedin"
+              />
+            </a>
+          </li>
+        </ul>
+
+        <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
+        <p>
+          Made with love by
+          <a href="" class="link">Aryan</a>.
+        </p>
+        <div class="footer__github-buttons">
+          <!-- <iframe
+            src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
+            frameborder="0"
+            scrolling="0"
+            width="170"
+            height="20"
+            title="Watch Portfolio Template on GitHub"
+          >
+          </iframe> -->
+        </div>
+      </div>
+    </footer>
+
+    <!-- <a href="#top" class="back-to-top" title="Back to Top">
+      <img
+        src="./images/arrow-up.svg"
+        alt="Back to Top"
+        class="back-to-top__image"
+      />
+    </a> -->
+    <script src="./index.js"></script>
+  </body>
+</html>
