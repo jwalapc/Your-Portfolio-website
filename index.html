@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <script>
+        
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+  
+    <!--main start-->
+    <div class="main">
+    <!--home start-->
+
+    <section class="home-section  align-items-center hidden">
+   <div class="container">
+           <div class="row align-items-center">
+               <div class="home-text">
+                
+    
+                    <h4 >Hello,I'm</h4>
+                    
+                 <h1 class="name">Radhika Tamhankar</h1>
+                 <h2>Web-developer</h2>
+                 <br> <br>
+                 <a href="" class="btn">  More about me</a>
+                 <a href="" class="btn">Portfolio</a>
+                    
+                </div>
+                <div class="home-img">
+                    <div class="img-box">
+                        <img src="profile.png" alt="profile-img"  class="profile">
+                        
+                    </div>
+               </div>
+           
+            </div>
+   </div>
+   
+    </section>
+
+    <!--home end-->
+    
+<!--about section starts-->
+<section class="about-section sec-padding">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h2>About Me</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="about-img">
+                <div class="img-box">
+                    <img src="profile.png" alt="" height="350px" width="250px">
+                </div>
+               </div>
+               <div class="about-text">
+                   <p>My name is RADHIKA TAMHANKAR. I m currently studying in 2nd year elecronics and telecommunicatuin engineering
+                       My hobbies are travelling and exploring different places
+
+                   </p>
+                   <h3>Skills</h3>
+                   <div class="skills">
+                       <div class="skills-item">HTML</div>
+                       <div class="skills-item">CSS</div>
+                       <div class="skills-item">Java-script</div>
+                       <div class="skills-item">Mysql</div>
+                       <div class="skills-item">Python</div>
+                       <div class="skills-item">Digital Network Marketing</div>
+                       
+                   </div>
+                   <div class="about-tabs">
+                       
+                    <button type="button" class="tab-item active" onclick="show1()">Education</button>
+                    <button type="button" class="tab-item "  onclick="show2()">Experience</button>
+                   
+                </div>
+                <!--education start-->
+                <div class="tab-content active" id="div1">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <span class="date">2020 - 2024</span>
+                            <h4>Bachelor Of Engineering - <span>Thakur College Of Engineering & Technology</span> </h4>
+                            <p>Electronics And Telecommunications</p>
+                            <p>CGPA: 9.85</p>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <span class="date">2020</span>
+                                <h4>Higher Secondary Certificate - <span>Thakur Vidhya Mandir Jr.College </span> </h4>
+                                <p>Stream - Science</p> 
+                                <p>Percentage:82.46%</p>
+                            </div>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <span class="date">2018</span>
+                                    <h4>Secondary School Certificate - <span>St.Xavier's High School</span> </h4>
+                                    <p>Percentage:93%</p>
+                                </div>
+                            </div>   
+                    </div>
+                </div>
+                <!--education end-->
+                <style type="text/css">
+                    #div2{
+                        display:none;
+                    }
+                </style>
+                <!--experience start-->
+                
+                <!--experience end-->
+
+               </div>
+        </div>
+
+    </div>
+    <div class="tab-content" id="div2">
+        <div class="timeline">
+            <div class="timeline-item">
+                <span class="date">Oct 2021 - Present</span>
+                <h4>
+
+                    Digital Network Marketing</h4>
+                <p>Company : Forever Living Products</p>
+                <p>Position : Assistant Supervisor</p>
+            </div>
+            <div class="timeline-item">
+                <span class="date">April-2021 - Present</span>
+                <h4>
+
+                    Public Relation </h4>
+                <p>Institute : TCET-MUN </p>
+                <p>Position : Team Leader</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--about section ends-->
+
+
+
+
+
+    </div>
+    <!--main end-->
+
+
+</body>
+</html>
+<script>
+function show1(){
+    document.getElementById("div2").style.display="none";
+    document.getElementById("div1").style.display="block";
+}
+function show2(){
+    document.getElementById("div1").style.display="none";
+    document.getElementById("div2").style.display="block";
+}
+
+</script>
